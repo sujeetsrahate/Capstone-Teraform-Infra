@@ -57,6 +57,18 @@ resource "aws_subnet" "private_2" {
   availability_zone = data.aws_availability_zones.available.names[1]
 }
 
+resource "aws_subnet" "private_3" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = var.private_subnet_3
+  availability_zone = data.aws_availability_zones.available.names[1]
+}
+
+resource "aws_subnet" "private_4" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = var.private_subnet_4
+  availability_zone = data.aws_availability_zones.available.names[1]
+}
+
 resource "aws_eip" "nat" {
   domain = "vpc" # Updated deprecated vpc = true
 }
