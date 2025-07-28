@@ -6,6 +6,6 @@ output "rds_endpoint" {
   value = aws_db_instance.rds.endpoint
 }
 
-output "dynamodb_table_name" {
-  value = aws_dynamodb_table.cart.name
+output "rds_table_name" {
+  value = aws_rds_table.cart.name
 }
