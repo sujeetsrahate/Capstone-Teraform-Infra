@@ -14,3 +14,5 @@
 #    prevent_destroy = true
 #  }
 #}
+
+this is useful if what to add dynamodb and add in the code and in output change rds into dynamodb
